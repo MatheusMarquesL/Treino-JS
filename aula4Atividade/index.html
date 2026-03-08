@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Veiculos</title>
 </head>
 <body>
-    
+
+    <h1>Cadastro de Veículos</h1>
+
+    <label>Marca:</label>
+    <input type="text" id="marca" placeholder="Ex: Fiat, Kawazaki..."><br><br>
+
+    <label>Modelo:</label>
+    <input type="text" id="modelo" placeholder="Ex: Chevette, CG 160..."><br><br>
+
+    <label>Tipo:</label>
+    <select id="tipo">
+        <option value="carro">Carro</option>
+        <option value="moto">Moto</option>
+    </select><br><br>
+
+    <div id="campoPortas">
+        <label>Portas:</label>
+        <input type="number" id="portas" placeholder="2 ou 4">
+    </div>
+   
+    <div id="campoCilindradas" style="display: none;">         
+        <label>Cilindradas:</label>
+        <input type="number" id="cilindradas" placeholder="400, 500..">
+    </div>
+
+    <br><br>
+
+    <button onclick="cadastrar()">Cadastrar Veículo</button>
+    <button onclick="listar()">Listar Veículos</button>
+    <button onclick="mover()">Mover Veículos</button>
+
+    <p id="resultado"></p>
+
     <script src="index.js"></script>
 </body>
 </html>
