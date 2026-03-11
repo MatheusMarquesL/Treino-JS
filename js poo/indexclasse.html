@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de veículos</title>
+</head>
+<body>
+    
+    <h2>Cadastro de Veículos</h2>
+
+    <input id="marca" placeholder="Marca...">
+
+    <input id="modelo" placeholder="Modelo...">
+
+    <select id="tipo">
+        <option value="carro">Carro</option>
+        <option value="moto">Moto</option>
+    </select>
+
+    <input id="portas" placeholder="Número de portas">
+
+    <input id="cilindradas" placeholder="Cilindradas">
+
+    <button onclick="cadastrarVeiculo()">Cadastrar Veículo</button>
+    <button onclick="listarVeiculos()">Listar Veículos</button>
+    <button onclick="moverVeiculos()">Mover Veículos</button>
+
+    <p id="resultado"></p>
+
+    <script src="./aulaclasse.js"></script>
+</body>
+</html>
