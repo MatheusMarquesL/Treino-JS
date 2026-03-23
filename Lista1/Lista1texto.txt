@@ -1,0 +1,33 @@
+RESPOSTAS
+
+1. código síncrono é aquele que segue o código linha
+por linha. código assíncrono é aquele que segue o código
+inteiro podendo pular etapas para concluir o objetivo.
+
+a) Porque ele trava o fluxo, enquanto uma tarefa roda, o backend
+não atende outras requisições
+
+b) Requisição API e Leitura de Banco de Dados
+
+
+
+2. É um objeto que representa uma operação que vai terminar no futuro.
+
+a) Resolve o problema do "Callback Hell" e organiza melhor o código assíncrono.
+
+b) Pending, fulfilled e rejected.
+
+c) minhaPromise
+    .then(resultado => console.log(resultado))
+    .catch(erro => console.log(erro))
+
+
+3.
+
+a) Faz a função sempre retornar uma Promise.
+
+b) Faz o código "esperar" o resultado de uma Promise.
+
+c) Porque pode dar erro e quebrar a aplicação se não tratar.
+
+d) Buscar dados no banco e Fazer requisição API.
